@@ -1,12 +1,80 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Estágio | Prova de seleção</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+      <main>
+            <div class="img-background">
+              <img src="images/index-image.jpg" alt="Imagem background" />
+            </div>
+        <section class="header">           
+            <nav class="cabecalho">
+              <div class="img-logo">
+                <img src="images/logo-in8-dev.svg" alt="Logo IN8" />
+              </div>
+              <a class="cabecalho-item" href="#">Cadastro</a>
+              <a class="cabecalho-item" href="#">Lista</a>
+              <a class="cabecalho-item" href="#">Sobre mim</a>
+            </nav>
+            <div class="cabecalho-titulo">
+              <h1>ESTÁGIO</h1>
+                <span>PROVA DE SELEÇÃO</span>
+            </div>
+        </section>
+
+        <section class="cadastro">
+            <div class="titulo">
+                <h1>CADASTRO</h1>			
+            </div>
+            <form id="formulario" class="formulario">
+                <div class="formulario-item">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome"/>
+            </div>  
+                </div>
+                <div class="formulario-item">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email"  placeholder="Digite seu E-mail">  
+                </div>
+                <div class="formulario-item">
+                    <label for="nasc">Data de nascimento</label>
+                    <input type="text" name="nasc" id="nasc" placeholder="Digite sua data de Nascimento">  
+                </div>
+                <div class="formulario-item">
+                    <label for="tel">Telefone</label>
+                    <input type="tel" name="tel" data-js="phone" id="tel" placeholder="Digite seu telefone">  
+                </div>
+                <div class="formulario-button">
+                    <input type="button" class="button" value="Cadastrar" onclick="cadPessoa(nome.value, email.value, nasc.value, tel.value)">
+                </div>
+            </form>
+        </section>
+        
+        <section class="lista">
+            <div class="lista-titulo">
+                <h1>LISTA DE CADASTROS</h1>
+            </div>
+            <table class="tabela" id="tbPessoa">
+                <thead>
+                    <tr>
+                        <td class="tabela-item-1"></td>
+                        <td class="tabela-item">Nome</td>
+                        <td class="tabela-item">E-mail</td>
+                        <td class="tabela-item">Data de nascimento</td>
+                        <td class="tabela-item-2">Telefone</td>
+                    </tr>
+                </thead>
+            </table>
+        </section>
+        <script src="js/script.js" async defer></script>
+        <footer>
+          <img src="images/rodape-desktop.jpg" alt="">
+        </footer>
+      </main>
+    </body>
 </html>

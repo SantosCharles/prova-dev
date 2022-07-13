@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  
+}
+
+main {
+  flex-direction: column;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  position: relative;
+}
+
+.img-background {
+  display: flex;
+  background-size: cover;
+  position: absolute;
+  width: -80px ;
+  top: 0;
+   
+}
+
+.img-logo {
+  display: flex;
+  position: relative;
+  height: 40px;
+  right: 220px;
+}
+
+.cabecalho {
+  padding: 30px;
+  left: 250px;
+}
+
+.cabecalho-titulo {
+  display: flex;
+  position: relative;
+  font-size: 40px;
+  right: 29%;
+  top: 150px;
+  color: white;
+}
+
+span {
+  display: flex;
+  position: relative;
+  right: 41.5%;
+  top: 70px;
+}
+
+.cabecalho-item {
+  display: flex;
+  position: relative;
+  color: white;
+  display: inline;
+  margin: 20px;
+  top: -25px;
+  left: 600px;
+}
+
+.cadastro {
+  background: #29abe2;
+  width: 100%;
+  max-width: 100vh;
+  overflow: hidden;
+  position: relative;
+  top: 751px;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 20px;
+}
+
+.formulario {
+  padding: 20px;
+}
+
+.formulario-item {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.formulario-item label {
+  color: white;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.formulario-item input {
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  outline: 0;
+  border-bottom-color: white;
+
+  background: none;
+  display: block;
+  width: 95%;
+  padding: 10px;
+}
+
+input::placeholder {
+  color: white;
+}
+
+.formulario-button {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: #012d51;
+  color: white;
+  border: none;
+  font-size: 20px;
+  width: 45%;
+  padding: 10px;
+  transition: all ease 0.5;
+}
+
+.button:hover {
+  background-color: #044275;
+}
+
+.lista {
+  flex-direction: column;
+  padding: 50px;
+  display: flex;
+  position: relative;
+  top: 48em;
+}
+.lista-titulo {
+  padding: 10px;
+  text-align: center;
+}
+
+.tabela {
+  border-collapse: collapse;
+  border: 1px solid white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 750px;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.tabela td {
+  border: 1px solid;
+  padding: 10px;
+  text-align: center;
+}
+
+.tabela-item {
+  border-top: 0;
+  border: 1px solid white;
+}
+
+.tabela-item-1 {
+  border-top: 0;
+  border-left: 0;
+  border: 1px solid white;
+}
+
+.tabela-item-2 {
+  border-top: 0;
+  border-right: 0;
+  border-color: white;
+}
+
+footer {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  top: 100em;
+}
