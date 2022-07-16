@@ -1,0 +1,252 @@
+.btn {
+  background-color: #012d51;
+  color: #29abe2;
+  margin-top: 3rem;
+  padding: 0.8rem;
+  font-size: 2rem;
+  border: none;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+.btn:hover {
+  background-color: #29abe2;
+  color: #012d51;
+  border: 1px solid #012d51;
+}
+@media (max-width: 425px) {
+  .btn {
+    margin-top: 0;
+    width: 76%;
+  }
+}
+
+.cad-container h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 0.8rem;
+  text-align: center;
+  color: white;
+}
+
+.lista-container h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #29abe2;
+}
+@media (max-width: 425px) {
+  .lista-container h2 {
+    font-size: 2rem;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+* a {
+  text-decoration: none;
+}
+* li {
+  list-style: none;
+}
+
+#main-banner {
+  background: url("../img/index-image.jpg");
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 425px) {
+  #main-banner {
+    background: url("../img/index-image-mobile.jpg");
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+  }
+}
+#main-banner nav {
+  right: 0;
+}
+@media (max-width: 425px) {
+  #main-banner nav {
+    display: none;
+  }
+}
+#main-banner .nav-container {
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 6rem;
+  z-index: 10;
+}
+@media (max-width: 425px) {
+  #main-banner .nav-container {
+    padding: 1.5rem 3rem;
+    flex-direction: row-reverse;
+  }
+}
+#main-banner .nav-container .brand {
+  margin-left: 5%;
+  background: url("../img/logo-in8-dev.svg");
+  color: transparent;
+  background-repeat: no-repeat;
+}
+#main-banner .nav-container .fas.fa-bars {
+  background: url("../icons/hamburguer.svg");
+  background-repeat: no-repeat;
+  font-size: 1rem;
+  right: 12%;
+  color: transparent;
+  display: none;
+}
+@media (max-width: 425px) {
+  #main-banner .nav-container .fas.fa-bars {
+    display: block;
+  }
+}
+#main-banner .nav-container-navbar {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  right: 5%;
+}
+#main-banner .nav-container-navbar li {
+  margin: 5px 10px;
+}
+#main-banner .nav-container-navbar li a {
+  color: white;
+  transition: 0.3s;
+}
+#main-banner .nav-container-navbar li a:hover {
+  color: #29abe2;
+}
+#main-banner .title-container {
+  color: white;
+  display: flex;
+  font-size: 2rem;
+  flex-direction: column;
+  margin-left: 13%;
+  align-items: flex-start;
+  justify-content: center;
+  height: 50vh;
+}
+@media (max-width: 425px) {
+  #main-banner .title-container {
+    font-size: 1.3rem;
+    height: 30vh;
+    margin-left: 13%;
+  }
+  #main-banner .title-container h1 {
+    font-size: 3.5rem;
+  }
+}
+
+.cad-container {
+  background-color: #29abe2;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 90vh;
+  margin-bottom: 2rem;
+}
+.cad-container .formulario-container {
+  margin-left: 25%;
+  margin-top: 1rem;
+  text-align: center;
+  width: 50%;
+  justify-content: center;
+}
+@media (max-width: 425px) {
+  .cad-container .formulario-container {
+    margin: 13%;
+  }
+}
+.cad-container .formulario-container .formulario {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  color: red;
+}
+.cad-container .formulario-container .formulario .formulario-item {
+  text-align: left;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+.cad-container .formulario-container .formulario .formulario-item label {
+  color: white;
+}
+@media (max-width: 425px) {
+  .cad-container .formulario-container .formulario .formulario-item label {
+    font-size: 0.7rem;
+  }
+}
+.cad-container .formulario-container .formulario .formulario-item input {
+  width: 95%;
+  font-size: 1rem;
+  color: white;
+  padding: 0.3rem;
+  background: #29abe2;
+  border-color: white;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  outline: 0;
+}
+@media (max-width: 425px) {
+  .cad-container .formulario-container .formulario .formulario-item input {
+    width: 160%;
+  }
+}
+
+.lista-container {
+  text-align: center;
+  width: 100%;
+  height: 90vh;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+.lista-container .tabela {
+  border-collapse: collapse;
+  margin-left: 20%;
+  text-align: center;
+  width: 60%;
+  height: 2.5rem;
+  justify-content: center;
+  padding: 2rem 0;
+}
+.lista-container .tabela-item {
+  padding: 0.5rem;
+  border: 2px solid #29abe2;
+  border-top: 0;
+  color: #012d51;
+}
+.lista-container .tabela-item-1 {
+  padding: 0.6rem;
+  border: 2px solid #29abe2;
+  border-top: 0;
+  border-left: 0;
+  color: #012d51;
+}
+.lista-container .tabela-item-2 {
+  padding: 0.5rem;
+  border: 2px solid #29abe2;
+  border-top: 0;
+  border-right: 0;
+  color: #012d51;
+}
+
+.footer-container {
+  background: url("../img/rodape-desktop.jpg");
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

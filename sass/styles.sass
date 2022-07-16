@@ -1,0 +1,186 @@
+@import 'variables'
+@import 'utilities'
+
+@include reset
+
+#main-banner
+    background: $bg-image
+    height: 90vh
+    background-size: cover
+    background-position: center
+
+    @include mobile
+            background: $bg-image-mobile
+            height: 90vh
+            background-size: cover
+            background-position: center
+       
+    nav
+        right: 0
+        @include mobile
+            display: none
+    
+        
+
+    .nav-container
+        display: flex
+        justify-content: space-between
+        top: 0
+        left: 0
+        width: 100%
+        padding: 1.5rem 6rem
+        z-index: 10
+
+        @include mobile
+            padding: 1.5rem 3rem
+            flex-direction: row-reverse
+
+        .brand
+            margin-left: 5%
+            background: $logo
+            color: transparent
+            background-repeat: no-repeat
+
+        .fas.fa-bars
+            background: $burguer-image
+            background-repeat: no-repeat
+            font-size: 1rem
+            right: 12%
+            color: transparent
+            display: none
+
+            @include mobile
+                display: block
+
+        &-navbar
+            display: flex
+            align-items: center
+            height: 100%
+            right: 5%
+
+            li
+                margin: 5px 10px
+                
+
+                a
+                    color: white
+                    @include main-hover
+        
+
+    .title-container
+        color: white
+        display: flex
+        font-size: 2rem
+        flex-direction: column
+        margin-left: 13%
+        align-items: flex-start
+        justify-content: center
+        height: 50vh
+
+        @include mobile
+            font-size: 1.3rem
+            height: 30vh
+            margin-left: 13%
+
+            h1
+                font-size: 3.5rem
+            
+            
+
+.cad-container
+    background-color: $primary-color
+    flex-direction: column
+    text-align: center
+    width: 100%
+    height: 90vh
+    margin-bottom: 2rem
+
+    h2
+        @extend %main-title
+
+    .formulario-container
+        margin-left: 25%
+        margin-top: 1rem
+        text-align: center
+        width: 50%
+        justify-content: center
+
+        @include mobile
+           margin: 13%
+
+        .formulario
+            display: flex
+            flex-direction: column
+            width: 100%
+            height: 100%
+            color: red
+
+            .formulario-item
+                text-align: left
+                font-size: 1rem
+                padding: .5rem
+
+                label
+                    color: white
+
+                    @include mobile
+                        font-size: .7rem
+
+                input
+                    width: 95%
+                    font-size: 1rem
+                    color: white
+                    padding: .3rem
+                    background: $primary-color
+                    border-color: white
+                    border-left: 0
+                    border-right: 0
+                    border-top: 0
+                    outline: 0 
+
+                    @include mobile
+                        width: 160%
+                                           
+
+.lista-container
+    text-align: center
+    width: 100%
+    height: 90vh
+    padding: 2rem
+    margin-bottom: 2rem
+
+    h2
+        @extend %main-title-tabela
+
+    .tabela
+        border-collapse: collapse
+        margin-left: 20%
+        text-align: center
+        width: 60%
+        height: 2.5rem
+        justify-content: center
+        padding: 2rem 0
+
+        &-item
+            padding: .5rem
+            border: 2px solid $primary-color
+            border-top: 0
+            color: $secundary-color
+            &-1
+                padding: .6rem 
+                border: 2px solid $primary-color
+                border-top: 0
+                border-left: 0
+                color: $secundary-color 
+            &-2
+                padding: .5rem
+                border: 2px solid $primary-color
+                border-top: 0
+                border-right: 0
+                color: $secundary-color       
+
+.footer-container
+    background: $footer-img
+    height: 30vh
+    background-size: cover
+    background-position: center

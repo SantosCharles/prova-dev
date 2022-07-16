@@ -1,80 +1,84 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="utf-8">
-        <title>Estágio | Prova de seleção</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-      <main>
-            <div class="img-background">
-              <img src="images/index-image.jpg" alt="Imagem background" />
-            </div>
-        <section class="header">           
-            <nav class="cabecalho">
-              <div class="img-logo">
-                <img src="images/logo-in8-dev.svg" alt="Logo IN8" />
-              </div>
-              <a class="cabecalho-item" href="#">Cadastro</a>
-              <a class="cabecalho-item" href="#">Lista</a>
-              <a class="cabecalho-item" href="#">Sobre mim</a>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IN8 | DEVops</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header id="main-banner">
+        <div class="nav-container">
+            <a href="#" class="brand">
+                <i class="fas fa-brain"></i>IN8..................
+            </a>
+            <nav>
+                <ul class="nav-container-navbar">
+                    <li>
+                        <a href="#">Cadastro</a>
+                    </li>
+                    <li>
+                        <a href="#">Lista</a>
+                    </li>
+                    <li>
+                        <a href="#">Sobre Mim</a>
+                    </li>
+                </ul>
             </nav>
-            <div class="cabecalho-titulo">
-              <h1>ESTÁGIO</h1>
-                <span>PROVA DE SELEÇÃO</span>
-            </div>
-        </section>
-
-        <section class="cadastro">
-            <div class="titulo">
-                <h1>CADASTRO</h1>			
-            </div>
+            <a href="#" class="brand2">
+                <i class="fas fa-bars">BU</i>
+            </a>
+        </div>
+        <div class="title-container">
+            <h1>ESTÁGIO</h1>
+            <h3>PROVA DE SELEÇÃO</h3>
+        </div>
+    </header>
+    <main class="cad-container">
+        <h2>Cadastro</h2>
+        <div class="formulario-container">
             <form id="formulario" class="formulario">
                 <div class="formulario-item">
                     <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome"/>
-            </div>  
+                    <input type="text" name="nome" id="nome">  
                 </div>
                 <div class="formulario-item">
                     <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email"  placeholder="Digite seu E-mail">  
+                    <input type="email" name="email" id="email">  
                 </div>
                 <div class="formulario-item">
-                    <label for="nasc">Data de nascimento</label>
-                    <input type="text" name="nasc" id="nasc" placeholder="Digite sua data de Nascimento">  
+                    <label for="nasc">Nascimento</label>
+                    <input type="text" name="nasc" id="nasc">  
                 </div>
                 <div class="formulario-item">
                     <label for="tel">Telefone</label>
-                    <input type="tel" name="tel" data-js="phone" id="tel" placeholder="Digite seu telefone">  
-                </div>
-                <div class="formulario-button">
-                    <input type="button" class="button" value="Cadastrar" onclick="cadPessoa(nome.value, email.value, nasc.value, tel.value)">
+                    <input type="tel" name="tel" data-js="phone" id="tel">  
                 </div>
             </form>
-        </section>
-        
-        <section class="lista">
-            <div class="lista-titulo">
-                <h1>LISTA DE CADASTROS</h1>
-            </div>
-            <table class="tabela" id="tbPessoa">
-                <thead>
-                    <tr>
-                        <td class="tabela-item-1"></td>
-                        <td class="tabela-item">Nome</td>
-                        <td class="tabela-item">E-mail</td>
-                        <td class="tabela-item">Data de nascimento</td>
-                        <td class="tabela-item-2">Telefone</td>
-                    </tr>
-                </thead>
-            </table>
-        </section>
-        <script src="js/script.js" async defer></script>
-        <footer>
-          <img src="images/rodape-desktop.jpg" alt="">
-        </footer>
-      </main>
-    </body>
+        </div>
+        <div class="formulario-button">
+            <input type="button" class="btn" value="Cadastrar" onclick="cadPessoa(nome.value, email.value, nasc.value, tel.value)">
+        </div>
+    </main>
+    <div class="lista-container">
+        <h2>lista de cadastro</h2>
+        <table class="tabela" id="tbPessoa" >
+            <thead >
+                <tr>
+                    <td class="tabela-item-1">&nbsp;</td>
+                    <td class="tabela-item">Nome</td>
+                    <td class="tabela-item">E-mail</td>
+                    <td class="tabela-item">Data de nascimento</td>
+                    <td class="tabela-item-2">Telefone</td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <footer>
+        <div class="footer-container">
+               
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
 </html>
