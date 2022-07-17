@@ -4,7 +4,6 @@
     margin: 0
     padding: 0
     box-sizing: border-box
-    font-family: Helvetica
 
     a
         text-decoration: none
@@ -19,11 +18,22 @@
     color: $primary-color
 
 // MOBILE
-@mixin mobile
-    @media (max-width: 425px)
+@mixin mobile-text
+    @media (max-width: 900px)
         @content
     
 
+@mixin mobile
+    @media (max-width: 567px)
+        @content
+
+
+@mixin menu-aberto
+    @media (max-width: 567px)
+        @content  
+
+    
+        
 
 .btn
     background-color: $secundary-color
@@ -31,6 +41,7 @@
     margin-top: 3rem
     padding: .8rem 
     font-size: 2rem
+    cursor: pointer
     border: none 
     text-transform: uppercase
     transition: .4s 

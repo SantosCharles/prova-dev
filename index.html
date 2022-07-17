@@ -9,25 +9,26 @@
 <body>
     <header id="main-banner">
         <div class="nav-container">
-            <a href="#" class="brand">
+            <a href="/" class="brand">
                 <i class="fas fa-brain"></i>IN8..................
             </a>
-            <nav>
+            <nav id="nav">
+                <a href="/" >
+                    <i id="btn-mobile" class="fas fa-bars">BU</i>
+                </a>
                 <ul class="nav-container-navbar">
                     <li>
-                        <a href="#">Cadastro</a>
+                        <a href="/">Cadastro</a>
                     </li>
                     <li>
-                        <a href="#">Lista</a>
+                        <a href="/">Lista</a>
                     </li>
                     <li>
-                        <a href="#">Sobre Mim</a>
+                        <a href="/">Sobre Mim</a>
                     </li>
                 </ul>
             </nav>
-            <a href="#" class="brand2">
-                <i class="fas fa-bars">BU</i>
-            </a>
+            
         </div>
         <div class="title-container">
             <h1>ESTÁGIO</h1>
@@ -48,7 +49,7 @@
                 </div>
                 <div class="formulario-item">
                     <label for="nasc">Nascimento</label>
-                    <input type="text" name="nasc" id="nasc">  
+                    <input type="text" name="nasc" id="nasc" maxlength="10" onkeypress="mascaraData(this)">  
                 </div>
                 <div class="formulario-item">
                     <label for="tel">Telefone</label>

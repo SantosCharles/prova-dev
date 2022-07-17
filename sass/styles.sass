@@ -1,11 +1,12 @@
 @import 'variables'
 @import 'utilities'
+@import url('../fonts/HelveticaUltraLt_0.ttf')
 
 @include reset
 
 #main-banner
     background: $bg-image
-    height: 90vh
+    height: 100vh
     background-size: cover
     background-position: center
 
@@ -15,13 +16,7 @@
             background-size: cover
             background-position: center
        
-    nav
-        right: 0
-        @include mobile
-            display: none
-    
         
-
     .nav-container
         display: flex
         justify-content: space-between
@@ -42,7 +37,7 @@
             background-repeat: no-repeat
 
         .fas.fa-bars
-            background: $burguer-image
+            background: $menu-mobile
             background-repeat: no-repeat
             font-size: 1rem
             right: 12%
@@ -52,20 +47,38 @@
             @include mobile
                 display: block
 
+            //@include menu-aberto
+             //   background: $menu-mobile-aberto
+             //   background-color: $primary-color
+
         &-navbar
             display: flex
-            align-items: center
             height: 100%
-            right: 5%
+
+            @include mobile
+                //display: block
+                display: none
+                background-color: $primary-color
+                position: absolute
+                width: 42%
+                height: 14%
+                top: 10%
+                left: 0
+
+                a
+                    padding: 1rem 0
+                    margin: 0 1rem
+
 
             li
                 margin: 5px 10px
                 
-
                 a
                     color: white
                     @include main-hover
-        
+
+                    //@include mobile
+                        
 
     .title-container
         color: white
@@ -76,6 +89,10 @@
         align-items: flex-start
         justify-content: center
         height: 50vh
+
+
+        @include mobile-text
+            font-size: 1.8rem
 
         @include mobile
             font-size: 1.3rem
@@ -92,27 +109,29 @@
     flex-direction: column
     text-align: center
     width: 100%
-    height: 90vh
+    height: 70vh
     margin-bottom: 2rem
 
     h2
         @extend %main-title
 
+        @include mobile
+            padding-top: 2rem
+
     .formulario-container
         margin-left: 25%
-        margin-top: 1rem
         text-align: center
         width: 50%
         justify-content: center
 
         @include mobile
-           margin: 13%
+           margin: 10%
 
         .formulario
             display: flex
             flex-direction: column
             width: 100%
-            height: 100%
+            height: 80%
             color: red
 
             .formulario-item
@@ -161,6 +180,10 @@
         justify-content: center
         padding: 2rem 0
 
+        @include mobile
+           margin: 3%
+           flex-direction: column
+
         &-item
             padding: .5rem
             border: 2px solid $primary-color
@@ -184,3 +207,9 @@
     height: 30vh
     background-size: cover
     background-position: center
+
+    @include mobile
+       background: $footer-img-mobile
+       height: 30vh
+       background-size: cover
+       background-position: center

@@ -1,9 +1,11 @@
+@import url("../fonts/HelveticaUltraLt_0.ttf");
 .btn {
   background-color: #012d51;
   color: #29abe2;
   margin-top: 3rem;
   padding: 0.8rem;
   font-size: 2rem;
+  cursor: pointer;
   border: none;
   text-transform: uppercase;
   transition: 0.4s;
@@ -13,7 +15,7 @@
   color: #012d51;
   border: 1px solid #012d51;
 }
-@media (max-width: 425px) {
+@media (max-width: 567px) {
   .btn {
     margin-top: 0;
     width: 76%;
@@ -35,7 +37,7 @@
   text-align: center;
   color: #29abe2;
 }
-@media (max-width: 425px) {
+@media (max-width: 567px) {
   .lista-container h2 {
     font-size: 2rem;
   }
@@ -45,7 +47,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Helvetica;
 }
 * a {
   text-decoration: none;
@@ -56,24 +57,16 @@
 
 #main-banner {
   background: url("../img/index-image.jpg");
-  height: 90vh;
+  height: 100vh;
   background-size: cover;
   background-position: center;
 }
-@media (max-width: 425px) {
+@media (max-width: 567px) {
   #main-banner {
     background: url("../img/index-image-mobile.jpg");
     height: 90vh;
     background-size: cover;
     background-position: center;
-  }
-}
-#main-banner nav {
-  right: 0;
-}
-@media (max-width: 425px) {
-  #main-banner nav {
-    display: none;
   }
 }
 #main-banner .nav-container {
@@ -85,7 +78,7 @@
   padding: 1.5rem 6rem;
   z-index: 10;
 }
-@media (max-width: 425px) {
+@media (max-width: 567px) {
   #main-banner .nav-container {
     padding: 1.5rem 3rem;
     flex-direction: row-reverse;
@@ -105,16 +98,29 @@
   color: transparent;
   display: none;
 }
-@media (max-width: 425px) {
+@media (max-width: 567px) {
   #main-banner .nav-container .fas.fa-bars {
     display: block;
   }
 }
 #main-banner .nav-container-navbar {
   display: flex;
-  align-items: center;
   height: 100%;
-  right: 5%;
+}
+@media (max-width: 567px) {
+  #main-banner .nav-container-navbar {
+    display: none;
+    background-color: #29abe2;
+    position: absolute;
+    width: 42%;
+    height: 14%;
+    top: 10%;
+    left: 0;
+  }
+  #main-banner .nav-container-navbar a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+  }
 }
 #main-banner .nav-container-navbar li {
   margin: 5px 10px;
@@ -136,7 +142,12 @@
   justify-content: center;
   height: 50vh;
 }
-@media (max-width: 425px) {
+@media (max-width: 900px) {
+  #main-banner .title-container {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 567px) {
   #main-banner .title-container {
     font-size: 1.3rem;
     height: 30vh;
@@ -152,26 +163,30 @@
   flex-direction: column;
   text-align: center;
   width: 100%;
-  height: 90vh;
+  height: 70vh;
   margin-bottom: 2rem;
+}
+@media (max-width: 567px) {
+  .cad-container h2 {
+    padding-top: 2rem;
+  }
 }
 .cad-container .formulario-container {
   margin-left: 25%;
-  margin-top: 1rem;
   text-align: center;
   width: 50%;
   justify-content: center;
 }
-@media (max-width: 425px) {
+@media (max-width: 567px) {
   .cad-container .formulario-container {
-    margin: 13%;
+    margin: 10%;
   }
 }
 .cad-container .formulario-container .formulario {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
+  height: 80%;
   color: red;
 }
 .cad-container .formulario-container .formulario .formulario-item {
@@ -182,7 +197,7 @@
 .cad-container .formulario-container .formulario .formulario-item label {
   color: white;
 }
-@media (max-width: 425px) {
+@media (max-width: 567px) {
   .cad-container .formulario-container .formulario .formulario-item label {
     font-size: 0.7rem;
   }
@@ -199,7 +214,7 @@
   border-top: 0;
   outline: 0;
 }
-@media (max-width: 425px) {
+@media (max-width: 567px) {
   .cad-container .formulario-container .formulario .formulario-item input {
     width: 160%;
   }
@@ -220,6 +235,12 @@
   height: 2.5rem;
   justify-content: center;
   padding: 2rem 0;
+}
+@media (max-width: 567px) {
+  .lista-container .tabela {
+    margin: 3%;
+    flex-direction: column;
+  }
 }
 .lista-container .tabela-item {
   padding: 0.5rem;
@@ -247,6 +268,14 @@
   height: 30vh;
   background-size: cover;
   background-position: center;
+}
+@media (max-width: 567px) {
+  .footer-container {
+    background: url("../img/rodape-mobile.jpg");
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
