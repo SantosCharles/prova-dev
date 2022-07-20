@@ -17,8 +17,7 @@
 }
 @media (max-width: 567px) {
   .btn {
-    margin-top: 0;
-    width: 76%;
+    position: relative;
   }
 }
 
@@ -228,13 +227,12 @@
   margin-bottom: 2rem;
 }
 .lista-container .tabela {
-  border-collapse: collapse;
   margin-left: 20%;
   text-align: center;
   width: 60%;
-  height: 2.5rem;
+  height: 2rem;
   justify-content: center;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 @media (max-width: 567px) {
   .lista-container .tabela {
@@ -242,22 +240,25 @@
     flex-direction: column;
   }
 }
-.lista-container .tabela-item {
-  padding: 0.5rem;
+.lista-container .tabela td {
+  padding: 0.3rem;
   border: 2px solid #29abe2;
-  border-top: 0;
   color: #012d51;
+  border-top: hidden;
+  border-left: hidden;
 }
-.lista-container .tabela-item-1 {
+.lista-container .tabela td .tabela-item-1 {
   padding: 0.6rem;
   border: 2px solid #29abe2;
-  border-top: 0;
-  border-left: 0;
+  border-left: hidden;
   color: #012d51;
 }
-.lista-container .tabela-item-2 {
+.lista-container .tabela td-3 {
+  margin: 0;
+}
+.lista-container .tabela td-5 {
   padding: 0.5rem;
-  border: 2px solid #29abe2;
+  border-bottom: 2px solid #29abe2;
   border-top: 0;
   border-right: 0;
   color: #012d51;

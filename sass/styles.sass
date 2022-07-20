@@ -172,32 +172,37 @@
         @extend %main-title-tabela
 
     .tabela
-        border-collapse: collapse
+        //border-collapse: collapse
         margin-left: 20%
         text-align: center
         width: 60%
-        height: 2.5rem
+        height: 2rem
         justify-content: center
-        padding: 2rem 0
+        padding: 1rem 0
 
         @include mobile
            margin: 3%
            flex-direction: column
 
-        &-item
-            padding: .5rem
+        td
+            padding: .3rem
             border: 2px solid $primary-color
-            border-top: 0
             color: $secundary-color
-            &-1
+            border-top: hidden
+            border-left: hidden
+
+            .tabela-item-1
                 padding: .6rem 
-                border: 2px solid $primary-color
-                border-top: 0
-                border-left: 0
-                color: $secundary-color 
-            &-2
+                border: 2px solid $primary-color 
+                border-left: hidden
+                color: $secundary-color
+
+            &-3 
+                margin: 0  
+
+            &-5
                 padding: .5rem
-                border: 2px solid $primary-color
+                border-bottom: 2px solid $primary-color
                 border-top: 0
                 border-right: 0
                 color: $secundary-color       
